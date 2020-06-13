@@ -51,7 +51,7 @@ const Home = ({navigation}) => {
               </TouchableOpacity>
 
               <Text style={styles.productName}>{items.item.name}</Text>
-              <Text style={styles.productDesc}> {items.item.specs}</Text>
+              {/* <Text style={styles.productDesc}> {items.item.specs}</Text> */}
             </View>
           </TouchableWithoutFeedback>
         ))}
@@ -61,4 +61,3 @@ const Home = ({navigation}) => {
 };
 
 export default Home;
-// test

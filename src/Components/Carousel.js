@@ -28,7 +28,7 @@ const CarouselComp = () => {
     return (
       <View
         style={{
-          borderRadius: 5,
+          // borderRadius: 5,
           height: 150,
           margin: 10,
           elevation: 6,
@@ -42,7 +42,7 @@ const CarouselComp = () => {
           height={150}
           resizeMode="contain"
           style={{
-            borderRadius: 5,
+            // borderRadius: 5,
             zIndex: 10,
           }}
         />

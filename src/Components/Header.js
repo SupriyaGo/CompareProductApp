@@ -14,7 +14,7 @@ const Header = props => {
     <View
       style={[
         styles.mainContainer,
-        {height: props.heading === 'Home' ? null : '14%'},
+        {height: props.heading === 'Home' ? null : '12%'},
       ]}>
       <View style={styles.headerContainer}>
         {props.heading === 'Home' ? null : (

@@ -5,10 +5,9 @@ const initialState = {
 const reducers = (state = initialState, action) => {
   switch (action.type) {
     case 'ADD_FAVOURITE':
-
       return {
         ...state,
-        favourite: action.payload,
+        favourite: state.favourite + 1,
       };
 
     default:

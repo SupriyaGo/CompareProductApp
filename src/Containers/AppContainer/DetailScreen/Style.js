@@ -6,7 +6,7 @@ const styles = StyleSheet.create({
   },
   scrollView: {
     flex: 1,
-    padding: 20,
+    padding: 10,
   },
   productName: {
     color: '#333333',
@@ -62,7 +62,7 @@ const styles = StyleSheet.create({
     fontSize: 18,
     fontWeight: 'bold',
     backgroundColor: '#DFAF2B',
-    paddingHorizontal: 10,
+    paddingHorizontal: 8,
     paddingVertical: 10,
     textAlign: 'center',
     borderRadius: 30,
@@ -72,7 +72,7 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     alignItems: 'center',
     backgroundColor: '#192A56',
-    paddingHorizontal: 15,
+    paddingHorizontal: 9,
     paddingVertical: 10,
 
     borderRadius: 30,
@@ -87,9 +87,8 @@ const styles = StyleSheet.create({
   buyBtn: {
     alignItems: 'center',
     backgroundColor: 'lightblue',
-    paddingHorizontal: 10,
-    paddingVertical: 10,
-
+    paddingHorizontal: 6,
+    paddingVertical: 6,
     borderRadius: 30,
   },
   buyText: {

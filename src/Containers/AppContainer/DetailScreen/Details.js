@@ -87,34 +87,36 @@ const Detail = ({route, navigation}) => {
             <Text style={styles.Company}>Amazon</Text>
             <View style={styles.priceRatingContainer}>
               <Text style={styles.priceText}>
-                {mobiles[index].item.amazon.price}
+                {mobiles[index].item.amazon.price}/-
               </Text>
               <Text style={styles.priceText}>
                 Rating {mobiles[index].item.amazon.rating}{' '}
               </Text>
+              <TouchableOpacity
+                onPress={() => Linking.openURL(mobiles[index].item.amazon.link)}
+                style={styles.buyBtn}>
+                <Text style={styles.buyText}>Buy</Text>
+              </TouchableOpacity>
             </View>
-            <TouchableOpacity
-              onPress={() => Linking.openURL(mobiles[index].item.amazon.link)}
-              style={styles.buyBtn}>
-              <Text style={styles.buyText}>Buy</Text>
-            </TouchableOpacity>
           </View>
           {/* flipkart */}
           <View style={styles.compareContainer}>
             <Text style={styles.Company}>Flipkart</Text>
             <View style={styles.priceRatingContainer}>
               <Text style={styles.priceText}>
-                {mobiles[index].item.flipkart.price}
+                {mobiles[index].item.flipkart.price}/-
               </Text>
               <Text style={styles.priceText}>
                 Rating {mobiles[index].item.flipkart.rating}{' '}
               </Text>
+              <TouchableOpacity
+                onPress={() =>
+                  Linking.openURL(mobiles[index].item.flipkart.link)
+                }
+                style={styles.buyBtn}>
+                <Text style={styles.buyText}>Buy</Text>
+              </TouchableOpacity>
             </View>
-            <TouchableOpacity
-              onPress={() => Linking.openURL(mobiles[index].item.flipkart.link)}
-              style={styles.buyBtn}>
-              <Text style={styles.buyText}>Buy</Text>
-            </TouchableOpacity>
           </View>
 
           {/* TATA Cliq */}
@@ -122,36 +124,38 @@ const Detail = ({route, navigation}) => {
             <Text style={styles.Company}>TATACliq</Text>
             <View style={styles.priceRatingContainer}>
               <Text style={styles.priceText}>
-                {mobiles[index].item.tataCLIQ.price}
+                {mobiles[index].item.tataCLIQ.price}/-
               </Text>
               <Text style={styles.priceText}>
                 Rating {mobiles[index].item.tataCLIQ.rating}{' '}
               </Text>
+              <TouchableOpacity
+                onPress={() =>
+                  Linking.openURL(mobiles[index].item.tataCLIQ.link)
+                }
+                style={styles.buyBtn}>
+                <Text style={styles.buyText}>Buy</Text>
+              </TouchableOpacity>
             </View>
-            <TouchableOpacity
-              onPress={() => Linking.openURL(mobiles[index].item.tataCLIQ.link)}
-              style={styles.buyBtn}>
-              <Text style={styles.buyText}>Buy</Text>
-            </TouchableOpacity>
           </View>
           {/* Paytm Mall */}
           <View style={styles.compareContainer}>
             <Text style={styles.Company}>Paytm</Text>
             <View style={styles.priceRatingContainer}>
               <Text style={styles.priceText}>
-                {mobiles[index].item.paytmMall.price}
+                {mobiles[index].item.paytmMall.price}/-
               </Text>
               <Text style={styles.priceText}>
                 Rating {mobiles[index].item.paytmMall.rating}{' '}
               </Text>
+              <TouchableOpacity
+                onPress={() =>
+                  Linking.openURL(mobiles[index].item.paytmMall.link)
+                }
+                style={styles.buyBtn}>
+                <Text style={styles.buyText}>Buy</Text>
+              </TouchableOpacity>
             </View>
-            <TouchableOpacity
-              onPress={() =>
-                Linking.openURL(mobiles[index].item.paytmMall.link)
-              }
-              style={styles.buyBtn}>
-              <Text style={styles.buyText}>Buy</Text>
-            </TouchableOpacity>
           </View>
         </View>
         <View style={{height: 40}} />

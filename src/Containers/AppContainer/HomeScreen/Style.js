@@ -14,16 +14,13 @@ const styles = StyleSheet.create({
     paddingTop: 10,
   },
   cardContainer: {
-    borderWidth: 2,
-    borderColor: '#979797',
-    borderRadius: 8,
-    marginHorizontal: 12,
     marginVertical: 10,
-
-    paddingBottom: 15,
+    width: 340,
+    alignSelf: 'center',
+    elevation: 8,
   },
   productImage: {
-    alignSelf: 'center',
+    width: 340,
     borderRadius: 3,
   },
   addFavBtn: {
@@ -42,6 +39,10 @@ const styles = StyleSheet.create({
     fontSize: 17,
     fontWeight: 'bold',
     padding: 3,
+    backgroundColor: '#fff',
+    position: 'absolute',
+    bottom: 15,
+    right: 0,
   },
   productDesc: {
     marginLeft: 20,
